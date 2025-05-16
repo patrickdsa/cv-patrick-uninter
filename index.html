@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick d'Sa</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imgs/favicon_rounded.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Cabeçalho da página onde contém um título e um menu -->
+<header> 
+        <h1 class= tituloheader> <a class= tituloheader href="index.html">Patrick d'Sa</a> </h1> 
+        <nav>
+            
+            <a href="index.html">Home</a>
+            <a href="formacoes.html">Formações</a>
+            <a href="portifolio.html">Portifólio</a>
+            <a href="contato.html">Contato</a>
+            
+        </nav>
+
+</header>
+
+<!-- Corpo da página com o conteúdo principal -->
+<main>
+    <article class="texto_home">
+       
+            <h1 class="titulo_home">Olá, bem-vindo <br>Eu sou o <strong>Patrick!</strong>
+            </h1>
+            <p>
+            </br>/* Sou estudante de engenharia de software e entusiasta em aprender */
+            </p>
+      
+            <aside>
+                <a href="sobreMim.html"><button> <p>Sobre Mim</p> </button> </a> <!-- botão que leva para página sobreMim.html-->
+            </aside> 
+        
+    </article>
+
+    <img class="avatar" src="imgs/avatarPaz.png" alt="avatar do Patrick fazendo sinal de Paz com as maos" srcset="">
+</main>
+
+
+<!-- Rodapé da página com informações sobre e-mail e direitos -->
+<footer>
+    <p> <i class="fa-regular fa-envelope"></i> patrickdesainfo@gmail.com</p>
+    <p> <i class="fa-regular fa-copyright"></i> Todos os direitos reservados: Patrick de Sá</p>
+</footer>
+
+
+
+
+<!-- script para saber qual opçào está ativa no menu navegação !--> <script>
+  const links = document.querySelectorAll("nav a");
+  const urlAtual = window.location.href;
+  
+  links.forEach(link => {
+    if (urlAtual.includes(link.getAttribute("href"))) {
+      link.classList.add("ativo");
+    }
+  });
+</script>
+</body>
+</html>

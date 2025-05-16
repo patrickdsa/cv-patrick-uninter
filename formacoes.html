@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick d'Sa</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imgs/favicon_rounded.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Cabeçalho da página onde contém um título e um menu -->
+<header> 
+        <h1 class= tituloheader> <a class= tituloheader href="index.html">Patrick d'Sa</a> </h1> 
+        <nav>
+            
+            <a href="index.html">Home</a>
+            <a href="formacoes.html">Formações</a>
+            <a href="portifolio.html">Portifólio</a>
+            <a href="contato.html">Contato</a>
+            
+        </nav>
+
+</header>
+
+<!-- Corpo da página com o conteúdo principal -->
+<main>
+    <article class="containerGeral">
+       <div class="textoGeral">
+
+            <h1 class="tituloFormacoes">Minhas formações:</h1>
+            <p>
+                /*
+                <br><br>
+                Ensino médio completo - <strong><a href="https://www.embaixadameyer.com/posts/col%C3%A9gio-estadual-visconde-de-cairu" target="_blank" class="linkArticle"> Visconde de Cairu </a></strong> <br>
+                Atualmente estudante em Engenharia de Software pela<strong><a href="https://www.uninteramericas.com/sobre/" target="_blank" class="linkArticle"> UNINTER</a></strong>
+                <br><br>
+                Nacionalidade: <strong>Brasileiro</strong>
+                <br><br>
+                Idiomas: <strong>Português e Inglês</strong>
+                <br><br>
+                */
+            </p>
+        </div> 
+        
+    </article>
+      <!-- Imagem do Avatar e descrição embaixo-->
+    <aside class="aside_Formacoes">
+                <img src="imgs/avatarLivro.png" alt="" srcset="" class="avatar">
+                <p class="curiosidade"> <<strong>curiosidade</strong>> Minhas linguages preferidas são: Javascript e Python! <<strong>/curiosidade</strong>></p>
+    </aside> 
+        
+
+            
+</main>
+<!-- Rodapé da página com informações sobre e-mail e direitos -->
+<footer>
+    <p> <i class="fa-regular fa-envelope"></i> patrickdesainfo@gmail.com</p>
+    <p> <i class="fa-regular fa-copyright"></i> Todos os direitos reservados: Patrick de Sá</p>
+</footer>
+
+
+
+
+<!-- script para saber qual opçào está ativa no menu navegação !--> <script>
+  const links = document.querySelectorAll("nav a");
+  const urlAtual = window.location.href;
+  
+  links.forEach(link => {
+    if (urlAtual.includes(link.getAttribute("href"))) {
+      link.classList.add("ativo");
+    }
+  });
+</script>
+</body>
+</html>

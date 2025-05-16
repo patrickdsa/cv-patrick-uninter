@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick d'Sa</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imgs/favicon_rounded.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Cabeçalho da página onde contém um título e um menu -->
+<header> 
+        <h1 class= tituloheader> <a class= tituloheader href="index.html">Patrick d'Sa</a> </h1> 
+        <nav>
+            
+            <a href="index.html">Home</a>
+            <a href="formacoes.html">Formações</a>
+            <a href="portifolio.html">Portifólio</a>
+            <a href="contato.html">Contato</a>
+            
+        </nav>
+
+</header>
+
+<!-- Corpo da página com o conteúdo principal -->
+<main>
+    <div class="containerGeral">
+      <h1 class="tituloForm"> Deixe aqui seu <br>contato!</h1>
+       <form class="textoGeral formulario" method="POST">
+
+            <h3>Nome Completo:</h3> <br> <input type="text" name="nome" id="nome">
+            <br>
+            <h3>E-mail:</h3> <br> <input type="email" name="email" id="email">
+            <br>
+            <h3>Telefone:</h3><br> <input type="tel" name="telefone" id="telefone">
+            <br>
+            <h3>Assunto:</h3> <br> <textarea name="assunto" id="assunto"></textarea>
+            <br>
+            <input type="submit" value="Enviar" class="botaoSubmit">
+            
+       </form> 
+        
+    </div>
+        <!-- Imagem do Avatar e descrição embaixo-->
+    <aside class="aside_Formacoes">
+                <img src="imgs/avatarTel.png" alt="" srcset="" class="avatar">
+                <p class="textoAvatar5 curiosidade"> 
+                    
+                    Entrarei em contato o mais breve possível!
+                
+                </p>
+    </aside> 
+        
+
+            
+</main>
+<!-- Rodapé da página com informações sobre e-mail e direitos -->
+<footer>
+    <p> <i class="fa-regular fa-envelope"></i> patrickdesainfo@gmail.com</p>
+    <p> <i class="fa-regular fa-copyright"></i> Todos os direitos reservados: Patrick de Sá</p>
+</footer>
+
+
+
+
+<!-- script para saber qual opçào está ativa no menu navegação !--> <script>
+  const links = document.querySelectorAll("nav a");
+  const urlAtual = window.location.href;
+  
+  links.forEach(link => {
+    if (urlAtual.includes(link.getAttribute("href"))) {
+      link.classList.add("ativo");
+    }
+  });
+</script>
+</body>
+</html>

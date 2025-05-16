@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick d'Sa</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imgs/favicon_rounded.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Cabeçalho da página onde contém um título e um menu -->
+<header> 
+        <h1 class= tituloheader> <a class= tituloheader href="index.html">Patrick d'Sa</a> </h1> 
+        <nav>
+            
+            <a href="index.html">Home</a>
+            <a href="formacoes.html">Formações</a>
+            <a href="portifolio.html">Portifólio</a>
+            <a href="contato.html">Contato</a>
+            
+        </nav>
+
+</header>
+
+<!-- Corpo da página com o conteúdo principal -->
+<main>
+    <article class="containerGeral">
+       <div class="textoGeral">
+
+            <h1 class="tituloSobreMim">Prazer, Patrick!</h1>
+            <p>/*
+              <br><br>
+            Nascido no subúrbio do Rio de Janeiro, sou apaixonado por praias, esportes e desafios!
+              <br><br>
+            Comecei a trabalhar de barbeiro para ajudar meus pais aos 17 anos, e segui na profissão durante mais de 8 anos até ter condições de ingressar no ensino superior, atualmente sou estudante de Engenharia de Software pela UNINTER. Aos 22 anos imigrei a Portugal e moro aqui desde então.
+              <br><br>
+            Adoro praticar esportes e sempre estou procurando algo novo para me desafiar, ao longo da minha vida já pratiquei Surf; fiz alguns anos de lutas (Muay Thai, Jiu-Jitsu e Karatê) apesar de minha paixão ser o Wrestling, nunca pratiquei; e também já fui atleta de Powerlifiting. 
+              <br><br>
+            Acredito que vivenciar estímulos e filosofias diferentes me ajuda a me tornar uma pessoa melhor
+              <br>
+            Apaixonado em aprender, meu lema é: Eu nunca perco. Ou eu ganho, ou aprendo! (Nelson Mandela)
+              <br><br>
+            */
+            </p>
+        </div> 
+        
+    </article>
+        <!-- Imagens dos Avatares-->
+    <aside class="aside_sobreMim">
+                <img src="imgs/avatarSurf.png" alt="" srcset="" class="avatar2">
+                <img src="imgs/avatarTrofeu.png" alt="" srcset=""class="avatar2">
+                <img src="imgs/avatarPeso.png" alt="" srcset=""class="avatar2">
+    </aside> 
+        
+
+            
+</main>
+<!-- Rodapé da página com informações sobre e-mail e direitos -->
+<footer>
+    <p> <i class="fa-regular fa-envelope"></i> patrickdesainfo@gmail.com</p>
+    <p> <i class="fa-regular fa-copyright"></i> Todos os direitos reservados: Patrick de Sá</p>
+</footer>
+
+
+
+
+<!-- script para saber qual opçào está ativa no menu navegação !--> <script>
+  const links = document.querySelectorAll("nav a");
+  const urlAtual = window.location.href;
+  
+  links.forEach(link => {
+    if (urlAtual.includes(link.getAttribute("href"))) {
+      link.classList.add("ativo");
+    }
+  });
+</script>
+</body>
+</html>
